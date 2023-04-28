@@ -5,3 +5,14 @@
     padding: 0;
     font-family: "Gill Sans", sans-serif;
 }
+/* HEADER */
+header{
+    text-align: center;
+    padding-top: 3rem;
+    max-width: 600px;
+    margin-inline: auto;
+}
+
+p{
+    padding: 0.5rem;
+}

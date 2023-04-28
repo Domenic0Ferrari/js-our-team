@@ -51,6 +51,10 @@ for(let i = 0; i < team.length; i++){
     console.log(`${i}. ${student.Name}, ${student.role}, ${student.img}`);
 };
 		
+/*
+MILESTONE 2:
+Stampare le stesse informazioni su DOM sottoforma di stringhe
+*/
 		
 		
 		
