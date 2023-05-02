@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     font-family: "Gill Sans", sans-serif;
+    background-color: bisque;
 }
 /* HEADER */
 header{
@@ -15,4 +16,18 @@ header{
 
 p{
     padding: 0.5rem;
+}
+/* MAIN */
+.container{
+    margin-top: 2rem;
+    max-width: 900px;
+    margin-inline: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 3rem;
+}
+
+.card{
+    text-align: center;
 }

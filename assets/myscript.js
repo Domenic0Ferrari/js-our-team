@@ -42,7 +42,7 @@ const team = [
 ];
 
 // Seleziono gli elementi nel DOM
-const eleList = document.querySelector('.card');
+const eleList = document.querySelector('.container');
 
 /*
 MILESTONE 1:
