@@ -42,7 +42,7 @@ const team = [
 ];
 
 // Seleziono gli elementi nel DOM
-const eleList = document.querySelector('.output');
+const eleList = document.querySelector('.card');
 
 /*
 MILESTONE 1:
@@ -57,7 +57,8 @@ for(let i = 0; i < team.length; i++){
     let member = team[i];
     console.log(`${i}. ${member.name}, ${member.role}, ${member.img}`);
     const stringMember = `${member.name}, ${member.role}, ${member.img}`;
-    eleList.innerHTML += `<li>${stringMember}</li>`;
+    eleList.innerHTML += renderCard(member)
+
 
     // console.log('Membro ' + i);
     // let stringMember = '';
@@ -70,5 +71,16 @@ for(let i = 0; i < team.length; i++){
     // Questo modo è per iterare con il ciclo FOR IN
 };
 		
+function renderCard(member) {
+	return `
+    	<div class="card">
+			<img src="img/${member.img}" alt="${member.name}">
+			<div class="contents">
+				<h2>${member.name}</h2>
+				<p>${member.role}</p>
+			</div>
+		</div>`;
+}
+
 		
 		
