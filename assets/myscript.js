@@ -10,51 +10,65 @@ Creare l’array di oggetti con le informazioni fornite.
 
 const team = [
     {
-        Name: 'Wayne Barnett',
+        name: 'Wayne Barnett',
         role: 'Founder & CEO',
         img: 'wayne-barnett-founder-ceo.jpg'
     },
     {
-        Name: 'Angela Caroll',
+        name: 'Angela Caroll',
         role: 'Chief Editor',
         img: 'angela-caroll-chief-editor.jpg'
     },
     {
-        Name: 'Walter Gordon',
+        name: 'Walter Gordon',
         role: 'Office Manager',
         img: 'walter-gordon-office-manager.jpg'
     },
     {
-        Name: 'Angela Lopez',
+        name: 'Angela Lopez',
         role: 'Social Media Manager',
         img: 'angela-lopez-social-media-manager.jpg'
     },
     {
-        Name: 'Scott Estrada',
+        name: 'Scott Estrada',
         role: 'Developer',
         img: 'scott-estrada-developer.jpg'
     },
     {
-        Name: 'Barbara Ramos',
+        name: 'Barbara Ramos',
         role: 'Graphic Designer',
         img: 'barbara-ramos-graphic-designer.jpg'
     }
 ];
 
+// Seleziono gli elementi nel DOM
+const eleList = document.querySelector('.output');
+
 /*
 MILESTONE 1:
 Stampare su console, per ogni membro del team, le informazioni di nome, ruolo e la stringa della foto.
 */
-
-for(let i = 0; i < team.length; i++){
-    let student = team[i];
-    console.log(`${i}. ${student.Name}, ${student.role}, ${student.img}`);
-};
-		
 /*
 MILESTONE 2:
 Stampare le stesse informazioni su DOM sottoforma di stringhe
 */
+
+for(let i = 0; i < team.length; i++){
+    let member = team[i];
+    console.log(`${i}. ${member.name}, ${member.role}, ${member.img}`);
+    const stringMember = `${member.name}, ${member.role}, ${member.img}`;
+    eleList.innerHTML += `<li>${stringMember}</li>`;
+
+    // console.log('Membro ' + i);
+    // let stringMember = '';
+    // for(let key in member){
+    //     stringMember += member[key] + ' - ';
+    // }if(stringMember){
+    //     stringMember = stringMember.slice(0, -3);
+    // }
+    // console.log(stringMember); 
+    // Questo modo è per iterare con il ciclo FOR IN
+};
 		
 		
 		
